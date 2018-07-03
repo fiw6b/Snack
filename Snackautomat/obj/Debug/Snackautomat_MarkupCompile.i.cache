@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-Z:\Visual Studio 2013\Projects\Snackautomat\Snackautomat\obj\Debug\
+Z:\GitHub\Snack\Snackautomat\obj\Debug\
 Snackautomat
 none
 false
 DEBUG;TRACE
-Z:\Visual Studio 2013\Projects\Snackautomat\Snackautomat\App.xaml
+Z:\GitHub\Snack\Snackautomat\App.xaml
 11151548125
-1-479832103
+
 13-876016507
 12-1401562060
 MainWindow.xaml;
 
-False
+True
 
