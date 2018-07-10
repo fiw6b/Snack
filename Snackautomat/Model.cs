@@ -29,7 +29,6 @@ namespace Snackautomat
             ProduktPool.Add(new Produkt(1, "Fanta", Settings.PRODUKTBILDPFAD + "fanta.jpg", 0.75));
             ProduktPool.Add(new Produkt(2, "Sprite", Settings.PRODUKTBILDPFAD + "sprite.jpg", 0.75));
             ProduktPool.Add(new Produkt(3, "Snickers", Settings.PRODUKTBILDPFAD + "snickers.jpg", 1.20));
-
             ProduktPool.Add(new Produkt(4, "Balisto", Settings.PRODUKTBILDPFAD + "balisto.jpg", 1.20));
             ProduktPool.Add(new Produkt(5, "Bounty", Settings.PRODUKTBILDPFAD + "bounty.jpg", 1.20));
             ProduktPool.Add(new Produkt(6, "FunnyFrisch", Settings.PRODUKTBILDPFAD + "funnyfresh.jpg", 1.20));
