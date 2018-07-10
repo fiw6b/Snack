@@ -17,11 +17,8 @@ Z:\Visual Studio 2013\Projects\Snackautomat\Snackautomat\bin\Debug\Snackautomat.
 Z:\Visual Studio 2013\Projects\Snackautomat\Snackautomat\obj\Debug\Snackautomat.exe
 Z:\Visual Studio 2013\Projects\Snackautomat\Snackautomat\obj\Debug\Snackautomat.pdb
 Z:\GitHub\Snack\Snackautomat\bin\Debug\Snackautomat.exe.config
-Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.exe
-Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.pdb
 Z:\GitHub\Snack\Snackautomat\bin\Debug\Snackautomat.exe
 Z:\GitHub\Snack\Snackautomat\bin\Debug\Snackautomat.pdb
-Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.csprojResolveAssemblyReference.cache
 Z:\GitHub\Snack\Snackautomat\obj\Debug\MainWindow.g.cs
 Z:\GitHub\Snack\Snackautomat\obj\Debug\App.g.cs
 Z:\GitHub\Snack\Snackautomat\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -31,3 +28,6 @@ Z:\GitHub\Snack\Snackautomat\obj\Debug\MainWindow.baml
 Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.g.resources
 Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.Properties.Resources.resources
 Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.csproj.GenerateResource.Cache
+Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.exe
+Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.pdb
+Z:\GitHub\Snack\Snackautomat\obj\Debug\Snackautomat.csprojResolveAssemblyReference.cache

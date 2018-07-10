@@ -64,27 +64,44 @@
         
         <Grid Grid.Row="1">
             <Rectangle Fill="White"/>
-            <Grid Margin="10">
+            <Grid Margin="10" VerticalAlignment="Center">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="128"/>
+                    <RowDefinition Height="125"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="170"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="170"/>
                 </Grid.ColumnDefinitions>
-                
-                <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="{Binding AusgewaehltesProdukt.Name}" Style="{StaticResource ueberschrift}" />
-                <TextBlock Grid.Column="2"  Grid.Row="0" TextAlignment="Center" Text="{Binding Guthaben, Converter={StaticResource GeldToString}}"  Style="{StaticResource ueberschrift}"/>
-                <Image Grid.Column="0" Grid.Row="1" Source="{Binding AusgewaehltesProdukt.BildPfad}" Height="128" Width="128"/>
-                <Grid Grid.Column="2" Grid.Row="1">
+                 <Image Grid.Column="0" Grid.Row="0" Source="{Binding AusgewaehltesProdukt.BildPfad}" Height="128" Width="128"/>
+                <Grid Grid.Column="1" Grid.Row="0" >
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Button Grid.Row="0" Height="50" Width="100" Name="kaufenBtn" Click="kaufenBtn_Click"  Content="Kaufen" Background="White" IsEnabled="{Binding KaufMoeglich}" />
-                    <Button Grid.Row="1" Height="50" Width="100" Name="abbrechenbtn" Click="abbrechenbtn_Click" Content="Abbrechen" Background="White" />
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" Text="{Binding AusgewaehltesProdukt.Name}" Style="{StaticResource ueberschrift}" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" Text="{Binding Guthaben, Converter={StaticResource GeldToString}}" Style="{StaticResource ueberschrift}" />
+                    <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right"  Style="{StaticResource ueberschrift}">
+                        <Run Text="{Binding minus, Mode=OneWay}" />
+                        <Run Text="{Binding AusgewaehltesProdukt.Preis, Converter={StaticResource GeldToString}}"/>
+                    </TextBlock>
+                    <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Text="{Binding GuthabenMinusPreis, Mode=OneWay, Converter={StaticResource GeldToString}}"/>
+                </Grid>
+                <Grid Grid.Column="3" Grid.Row="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Height="50" Width="100" Name="kaufenBtn" Click="kaufenBtn_Click"  Content="{Binding KaufenButtonText}" Background="White" IsEnabled="{Binding KaufMoeglich}" />
+                    <Button Grid.Row="1" Height="50" Width="100" Name="abbrechenbtn" Click="abbrechenbtn_Click" Content="{Binding AbbrechenButtonText}" Background="White" />
                 </Grid>
             </Grid>
         </Grid>

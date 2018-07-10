@@ -12,14 +12,23 @@ namespace Snackautomat
         public object Convert(object value, Type targetType, object parameter,
         System.Globalization.CultureInfo culture)
         {
+            double wert;
+            if (typeof(string) == value.GetType())
+            {                
+                if ((string)value != "")
+                {
+                    wert = System.Convert.ToDouble(value);
+                    return String.Format("{0:0.00}", wert) + "€";
+                }
+            }
             if (typeof(double) == value.GetType())
             {
-                double wert = (double)value;
-                return wert.ToString("0.##") + "€";
+                wert = (double)value;
+                return String.Format("{0:0.00}", wert) + "€";
             }
             else
             {
-                return value + "€";
+                return "";
             }
         }
 
